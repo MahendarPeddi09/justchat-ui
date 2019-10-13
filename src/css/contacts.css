@@ -1,0 +1,167 @@
+.contacts{
+    width: calc(30% - 70px);
+    min-width: 150px;
+    height: 100%;
+    background-color: darkgray;
+    float: left;
+    
+}
+.activecontacts{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.commonheader{
+    width: 100%;
+    height: 20%;
+    min-height: 100px;
+    flex : 0 1 18%;
+    padding: 0px;
+    overflow: hidden;
+    background-color: blueviolet;
+    box-shadow: 1px 1px 3px 3px white;
+    box-sizing: border-box;
+}
+.headertitle{
+
+    width: 100%;
+    height: 50%;
+}
+h1{
+    padding:5% 10px 0 ;
+    margin: 0px;
+    text-align: left;
+    vertical-align: middle
+}
+.search_contacts{
+    width: 100%;
+    min-width: 150px;
+    height: 50%;
+    display: flex;
+    overflow: hidden;
+    margin: 0 ;
+    padding:10px 10px;
+    box-sizing: border-box;
+    align-content: center
+
+}
+.search_inp{
+    
+    min-width: 120px;
+    height: 35px;
+    flex : 1 0 70%;
+    padding: 0 10px;
+    margin: 0;
+    float: left;
+    font-size: 16px;
+    border: 0;
+    outline: none;
+    background-color: whitesmoke;
+    justify-content: flex-start;
+    border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
+}
+.search_inp:focus{
+    background-color: white;
+}
+.search_btn{
+    width: 20%;
+    height: 35px;
+    float: left;
+    font-size: 16px;
+    padding: 0;
+    z-index: 10;
+    min-width: 30px;
+    margin: 0;
+    flex : 1 0 30%;
+    border: 0;
+    outline: none;
+    background-color: rgb(233, 229, 229);
+    justify-content: stretch;
+    border-radius: 0 5px 5px 0;
+    
+}
+.search_btn:hover{
+    background-color: rgb(173, 173, 173);
+}
+.contactsbody{
+    width: 100%;
+    height: 80%;
+    flex : 1 0 82%;
+    background-color: rgb(189, 184, 184);
+    box-sizing: border-box;
+    padding : 5px;
+    overflow: auto;
+}
+.contactsItem{
+    padding: 10px;
+    margin: 5px 0;
+    height: 80px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: rgb(255, 250, 250);
+    box-sizing: border-box;
+    
+}
+.contactsItem:hover{
+    z-index: 10;
+    box-shadow: 0 6px 10px 6px rgb(83, 83, 83);
+}
+.u_dis_pic{
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+.u_dis_info{
+    float: left;
+    height: 100%;
+    width: 80%;
+}
+.u_dis_info_a{
+    display: block;
+    height: 50%;
+    width: 100%;
+    
+}
+.u_dis_name{
+    float: left;
+    text-align: start;
+    font-weight: bold;
+    font-size: large;
+    vertical-align: middle;
+    height: 100%;
+    width: 80%;
+}
+.u_dis_time{
+    float: left;
+    margin-top: 5px;
+    height: 100%;
+    width: 20%;
+}
+.u_dis_info_b{
+    display: block;
+    height: 50%;
+    width: 100%;
+}
+/* Animation */
+/* Contact Header */
+.c_header-enter{
+    opacity: 0;
+    width: 100%;
+    height: 0;
+    
+}
+.c_header-enter-active {
+	opacity: 1;
+	height: 20%;
+}
+.c_header-exit {
+	opacity: 1;
+	height: 20%;
+}
+.c_header-exit-active {
+	opacity: 0;
+    height: 0;
+    color: transparent;
+}

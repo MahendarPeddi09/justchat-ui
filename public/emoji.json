@@ -1,0 +1,12 @@
+{
+    "smilies" : {
+        "grinning" : {
+            "name" : "Grinning_face",
+            "dec" : 128512
+        },
+        "joy_face_with_tears" : {
+            "name" : "joy_face_with_tears",
+            "dec" : 128514
+        }
+    }
+}
