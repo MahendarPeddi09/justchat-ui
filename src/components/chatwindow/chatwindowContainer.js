@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Chatwindow from '../components/chatwindow'
+import Chatwindow from './chatwindow'
 import { connect } from 'react-redux';
-import {_base_server_url, _base_app_url} from './../configuration'
-import {socket as io} from './mainContainer';
+import {_base_server_url, _base_app_url} from '../../configuration'
+import {socket as io} from '../main/mainContainer';
 //const io = socket;
 
 class ChatwindowContainer extends Component {

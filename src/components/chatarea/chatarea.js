@@ -4,7 +4,7 @@ import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import PetsIcon from '@material-ui/icons/Pets';
 import SearchIcon from '@material-ui/icons/Search';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import emojiList from './../emoji'
+import emojiList from './../../emoji.json'
 
 const smilies = emojiList.smilies
 const pets = emojiList.pets

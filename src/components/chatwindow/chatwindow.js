@@ -1,7 +1,7 @@
 import React from 'react';
-import ChatArea from './chatarea'
-import ChatInfo from './chatinfo'
-import './../css/chatwindow.css';
+import ChatArea from '../chatarea/chatarea'
+import ChatInfo from '../chatinfo/chatinfo'
+import './chatwindow.css';
 
 
 const Chatwindow = (props) => {

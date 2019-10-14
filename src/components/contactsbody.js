@@ -20,6 +20,7 @@ export default class contactsbody extends Component {
     }
     launchChat_h = (a,b) =>{
         //alert(a)
+        
         this.setState({selectedItem : a})
         this.props.launchChat_h(a,b)
     }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Login from '../components/login'
-import {_base_server_url, _base_app_url} from './../configuration'
+import Login from './login'
+import {_base_server_url, _base_app_url} from '../../configuration'
 import { connect } from 'react-redux';
-import { updateUserSession } from '../actions/chatwindowActions';
+import { updateUserSession } from '../../actions/chatwindowActions';
 
 export var logged = false;
 

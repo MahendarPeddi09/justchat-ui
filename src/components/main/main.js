@@ -1,8 +1,8 @@
 import React from 'react';
-import Menu from './../components/menu';
-import Contacts from './../components/contacts';
+import Menu from '../menu/menu';
+import Contacts from '../contacts';
 //mport ChatWindow from './../components/chatwindow';
-import ChatwindowContainer from '../containers/chatwindowContainer';
+import ChatwindowContainer from '../chatwindow/chatwindowContainer';
 
 
 

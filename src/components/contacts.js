@@ -11,13 +11,30 @@ const Contacts = (props) => {
     // const contacts = <AllContacts  />
     console.log('CONTACTS',props.currentScreen,props.currentScreen ,'Chats')
     console.log("contact:",props.contacts)
+    let currentscreen;
+    switch (props.currentScreen) {
+        case "Chats":
+            currentscreen = <ActiveContacts contacts={props.contacts} launchChat_h={props.launchChat_h} currentScreen={props.currentScreen}/>
+            break;
+        case "Contacts":
+                currentscreen = <AllContacts  currentScreen={props.currentScreen}/>
+            break;
+        case "Search":
+            break;
+        case "Settings":
+            break;
+    
+        default:
+            break;
+    }
     return (
         
         
+        
         <div className="contacts" style={{display:''}} >
-            
-            <ActiveContacts contacts={props.contacts} launchChat_h={props.launchChat_h} currentScreen={props.currentScreen}/>
-            <AllContacts  currentScreen={props.currentScreen}/>
+            {currentscreen}
+            {/* <ActiveContacts contacts={props.contacts} launchChat_h={props.launchChat_h} currentScreen={props.currentScreen}/>
+            <AllContacts  currentScreen={props.currentScreen}/> */}
             {/* <AllContacts /> */}
             
         </div>

@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import Main from '../components/main';
+import Main from './main';
 import { connect } from 'react-redux'
 import io from 'socket.io-client';
-import { updateUserSession } from '../actions/chatwindowActions';
-import {_base_server_url, _base_app_url} from './../configuration'
-import { chatwindowLaunch, saveChats } from '../actions/chatwindowActions';
+import { updateUserSession } from '../../actions/chatwindowActions';
+import {_base_server_url, _base_app_url} from '../../configuration'
+import { chatwindowLaunch, saveChats } from '../../actions/chatwindowActions';
 export const socket =  io.connect("http://localhost:7000/");
 
 

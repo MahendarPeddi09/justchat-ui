@@ -1,5 +1,5 @@
 import React from 'react'
-import './../css/login.css';
+import './login.css';
 import { log as Log,reg as Reg} from './log';
 
 

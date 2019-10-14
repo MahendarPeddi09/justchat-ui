@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
-import LoginContainer,{logged} from './containers/loginContainer';
-import Maincontainer from './containers/mainContainer';
+import LoginContainer,{logged} from './components/login/loginContainer';
+import Maincontainer from './components/main/mainContainer';
 import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';

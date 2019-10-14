@@ -21,6 +21,12 @@ export default class activecontacts extends Component {
             contacts : nextProps.contacts
         })
     }
+    componentDidMount(){
+      //  alert("mount")
+    }
+    componentWillUnmount(){
+       // alert("unmount")
+    }
 
     
     render() {
@@ -31,7 +37,7 @@ export default class activecontacts extends Component {
             
             <>
                 
-                    <div className="activecontacts" style={{display : this.props.currentScreen === 'Chats' ? 'flex' : 'none'}}>
+                    <div className="activecontacts" style={{display : 'flex'}}>
                         
                             <CommonHeader header="Contacts"/>
                         
