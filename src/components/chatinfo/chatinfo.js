@@ -1,5 +1,6 @@
 import React from 'react'
 import './../chatwindow/chatwindow.css'
+import './chatinfo.css'
 export default function chatinfo(props) {
     return (
         // <div className="chatinfo" style={{display: props.infoview ? 'block' : 'none'}}>

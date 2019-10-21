@@ -1,0 +1,227 @@
+.ChatInp{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(226, 224, 224);
+    box-sizing: border-box;
+    align-items: center;
+    box-shadow: 0px -10px 6px -6px #777;
+}
+.chatinp{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(226, 224, 224);
+    box-sizing: border-box;
+    overflow: hidden;
+    align-items: center;
+    box-shadow: 0px -10px 6px -6px #777;
+}
+.chatinp_a{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    top: 25%;
+    box-sizing: border-box;
+    padding: 0 5px;
+    margin: 0;
+}
+.chatinp_a_a{
+    float: left;
+    width: 90%;
+    
+    height: 100%;
+    display: flex;
+}
+.chatinp_a_a_1{
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    flex-basis: 50px;
+    position: relative;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    
+   
+    
+}
+.chatinp_a_a_2{
+    justify-content: stretch;
+    flex-grow: 1;
+    height: 100%;
+    margin: 0;
+    outline: 0;
+    
+    overflow: hidden;
+    box-sizing: border-box;
+     
+}
+.chatinp_a_a_2_inp{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    color: gray;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+chatinp_a_a_2_inp:focus{
+    
+}
+.chatinp_a_a_3{
+    height: 100%;
+    justify-content: flex-end;
+    flex-basis: 50px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    
+}
+
+.chatinp_a_b{
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+.chatinp_a_b_1{
+    width: 70%;
+    height: 100%;
+    font-size: 10px;
+
+}
+
+/* popover */
+
+.poplayer{
+    height: 0%;
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+}
+
+.popover{
+    width: 30%;
+    height: 200px;
+    background-color: white;
+    box-shadow: -6px  -6px 10px -6px #777;
+    z-index: 1000;
+    position: absolute;
+    top: -190px;
+    transition: left 1.1s,width 1s;
+    border-radius: 10px 10px 3px 3px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+.popover:after{
+    content: "";
+        position: absolute;
+        z-index: 10;
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+        border-color: transparent;
+        left: 90%;
+        top: 99%;
+		border-top-color: white ;
+        border-width: 12px;
+        
+        
+}
+.emoji_placeholder{
+    position: relative;
+    top: 100%;
+    padding: 5px 10px 10px 10px;
+    width: 100%;
+    height: 85%;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    transition : top 2s;
+    flex-basis: 85%;
+    justify-content: flex-start;
+    
+}
+.emoji_item{
+    padding: 4.5px 3px;
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+    float: left;
+    box-sizing: border-box;
+    vertical-align: middle;
+    cursor: pointer;
+    transition-delay: 1.1s;
+
+    
+}
+.emoji_item:hover{
+    border-radius: 20px 20px;
+    background-color: whitesmoke;
+
+}
+.emoji_bottom{
+    width: 100%;
+    height: 15%;
+    position: relative;
+    bottom: 0;
+    background-color:whitesmoke;
+    padding: 0;
+    flex-direction: row;
+    transition: width 1s;
+    justify-content: flex-end;
+    transition-delay: 3s;
+
+}
+@keyframes emoji_bottom{
+    
+    
+}
+
+.emoji_options{
+    width: 60%;
+    height: 100%;
+    float: left;
+    background-color: whitesmoke;
+    transition-delay: 1s;
+    transition: width 2s;
+    
+}
+.emoji_option{
+    width: 15%;
+    height: 100%;
+    float: left;
+    margin: 0 2px 0 0;
+    box-sizing: border-box;
+    padding: 4px 0px;
+}
+.emoji_option:hover{
+    background-color: gray;
+}
+
+.search_emoji{
+    padding: 2px;
+    width: 40%;
+    float: right;
+    box-sizing: border-box;
+    
+
+}
+.seach_emoji_inp{
+    width: 200px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    min-height: 24px;
+    position: relative;
+    right: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+}
+.seach_emoji_inp:focus{
+    background-color: white;
+}

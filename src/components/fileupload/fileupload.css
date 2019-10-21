@@ -1,0 +1,129 @@
+.fileupload-main1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.fileupload-main2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.fileupload-main3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.fu-header{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 0px;
+    background-color: dodgerblue;
+}
+.fu-content{
+    width: 100%;
+    height: calc(100% - 50px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.fu-main1{
+    margin-top: 25px;
+    flex-basis: 100%;
+    height: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+}
+.fu-main2{
+    margin-top: 25px;
+    width: 40%;
+    height: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+    flex-shrink: 1;
+    margin-right: 10px;
+}
+.fu-drop{
+    border: 2px dashed rgb(214, 214, 214);
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    margin:2px;
+    box-sizing: border-box;
+    height: 200px;
+}
+.fu-droped{
+    border: 2px dashed rgb(214, 214, 214);
+    border-radius: 3px;
+    width: 100%;
+    height: 70%;
+    margin:2px;
+    box-sizing: border-box;
+    height: 200px;
+}
+.fu-browse{
+    width: 100%;
+    margin-top: 15px;
+}
+.fu-browse button{
+    
+    height: 40px;
+    width: 150px;
+    margin: 0 0%;
+    position: relative;
+    left: 0;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border: 0;
+    background-color: rgb(8, 87, 165);
+    
+}
+.fu-browse button:hover{
+    z-index: 2;
+    box-shadow: 2px 1px 10px 1px gray;
+}
+
+.fu-list{
+    padding-top: 20px;
+    width: 200px;
+    height: 100%;
+    background-color: white;
+    flex-basis: 60%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    border-left: 1px solid gray;
+    overflow: scroll;
+}
+.fu-fl-item{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    height: 60px;
+    width: 100%;
+    margin: 5px;
+    background-color: whitesmoke;
+}
+.fl-item-icon{
+    height: 100%;
+    flex-basis: 60px;
+
+
+}
+.fl-item-details{
+    flex-basis: 100%;
+}

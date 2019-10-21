@@ -3,6 +3,8 @@ import Chatwindow from './chatwindow'
 import { connect } from 'react-redux';
 import {_base_server_url, _base_app_url} from '../../configuration'
 import {socket as io} from '../main/mainContainer';
+import FileuploadContainer from '../fileupload/fileupload-container';
+
 //const io = socket;
 
 class ChatwindowContainer extends Component {
@@ -105,6 +107,7 @@ class ChatwindowContainer extends Component {
         return (
             <>
                 <Chatwindow currentWindow={this.props.currentWindow} sendMsg={this.sendMsg} inpText={this.state.inpMessage} enterText={this.enterMsg} chats={this.state.chats}  chatwindowopen={this.state.ischatwindowopen} popwindow={this.state.popwindow} addEmoji={this.addEmoji} emojipopover={this.state.emojipopover} emojihandler={this.emojipopoverh} inserthandler={this.insertpopoverh}  popover={this.state.insertpopover} infoview={this.state.isinfoOpen} infohandler={this.infoHandler}/>
+                <FileuploadContainer />
             </>
         )
     }

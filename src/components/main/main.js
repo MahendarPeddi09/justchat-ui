@@ -6,6 +6,7 @@ import ChatwindowContainer from '../chatwindow/chatwindowContainer';
 
 
 
+
 export default function Main(props) {
     console.log('main',props.contacts,props.currentScreen)
    
@@ -15,6 +16,7 @@ export default function Main(props) {
             <Menu menuOption_h={props.menuOption_h}/>
             <Contacts contacts={props.contacts} currentScreen={props.currentScreen} launchChat_h={props.launchChat_h}/>
             <ChatwindowContainer recentChats={props.recentChats}/>
+            
         </div>
     )
 }
